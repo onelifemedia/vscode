@@ -8,7 +8,7 @@ import { onceDocumentLoaded } from './events';
 import { createPosterForVsCode } from './messaging';
 import { getEditorLineNumberForPageOffset, scrollToRevealSourceLine, getLineElementForFragment } from './scroll-sync';
 import { getSettings, getData } from './settings';
-import throttle = require('lodash.throttle');
+const throttle = require('lodash.throttle');
 
 declare let acquireVsCodeApi: any;
 
